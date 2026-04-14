@@ -3,742 +3,423 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marjia Islam | CSE Senior & Aspiring SQA Engineer</title>
+    <title>Marjia Islam | Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background: linear-gradient(135deg, #0a0a0f 0%, #12121a 100%);
-            color: #e4e4e7;
-            font-family: 'Space Grotesk', sans-serif;
-            line-height: 1.6;
-            min-height: 100vh;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-
-        /* Header / Navigation */
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 24px 0;
-            border-bottom: 1px solid rgba(123, 45, 142, 0.3);
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, #E2A9FF 0%, #c084fc 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .status-badge {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            background: rgba(123, 45, 142, 0.15);
-            padding: 8px 16px;
-            border-radius: 100px;
-            border: 1px solid rgba(123, 45, 142, 0.3);
-            font-size: 0.85rem;
-        }
-
-        .status-dot {
-            width: 8px;
-            height: 8px;
-            background: #22c55e;
-            border-radius: 50%;
-            animation: pulse 2s infinite;
-            box-shadow: 0 0 10px #22c55e;
-        }
-
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
-        }
-
-        /* Hero Section */
-        .hero {
-            padding: 80px 0 60px;
-        }
-
-        .hero-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: center;
-        }
-
-        .hero-badge {
-            display: inline-block;
-            background: rgba(123, 45, 142, 0.2);
-            color: #E2A9FF;
-            padding: 6px 14px;
-            border-radius: 100px;
-            font-size: 0.85rem;
-            font-weight: 500;
-            margin-bottom: 24px;
-            border: 1px solid rgba(226, 169, 255, 0.3);
-        }
-
-        .hero-title {
-            font-size: 3.5rem;
-            font-weight: 700;
-            line-height: 1.2;
-            margin-bottom: 20px;
-        }
-
-        .hero-title span {
-            background: linear-gradient(135deg, #E2A9FF 0%, #a855f7 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .hero-subtitle {
-            font-size: 1.2rem;
-            color: #a1a1aa;
-            margin-bottom: 30px;
-        }
-
-        .btn {
-            display: inline-block;
-            background: transparent;
-            color: #E2A9FF;
-            padding: 12px 28px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 500;
-            border: 1px solid rgba(226, 169, 255, 0.4);
-            transition: all 0.3s ease;
-            margin-right: 12px;
-        }
-
-        .btn-primary {
-            background: linear-gradient(135deg, #7B2D8E 0%, #a855f7 100%);
-            color: white;
-            border: none;
-        }
-
-        .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(123, 45, 142, 0.3);
-            border-color: #E2A9FF;
-        }
-
-        /* Stats Panel */
-        .stats-panel {
-            background: rgba(18, 18, 26, 0.8);
-            border: 1px solid rgba(123, 45, 142, 0.3);
-            border-radius: 16px;
-            padding: 24px;
-            backdrop-filter: blur(10px);
-        }
-
-        .stat-row {
-            display: flex;
-            justify-content: space-between;
-            padding: 12px 0;
-            border-bottom: 1px solid rgba(226, 169, 255, 0.1);
-        }
-
-        .stat-row:last-child {
-            border-bottom: none;
-        }
-
-        .stat-label {
-            color: #a1a1aa;
-        }
-
-        .stat-value {
-            color: #E2A9FF;
-            font-weight: 600;
-        }
-
-        .availability-tag {
-            display: inline-block;
-            background: rgba(34, 197, 94, 0.15);
-            color: #22c55e;
-            padding: 4px 12px;
-            border-radius: 100px;
-            font-size: 0.8rem;
-            margin-top: 16px;
-            border: 1px solid rgba(34, 197, 94, 0.3);
-        }
-
-        /* Section Styles */
-        section {
-            padding: 80px 0;
-        }
-
-        .section-header {
-            margin-bottom: 48px;
-        }
-
-        .section-tag {
-            color: #E2A9FF;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 8px;
-        }
-
-        .section-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-        }
-
-        /* About Section */
-        .about-content {
-            max-width: 800px;
-        }
-
-        .about-text {
-            font-size: 1.1rem;
-            color: #d4d4d8;
-            margin-bottom: 24px;
-        }
-
-        .skill-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 24px;
-        }
-
-        .skill-tag {
-            background: rgba(123, 45, 142, 0.15);
-            color: #E2A9FF;
-            padding: 6px 16px;
-            border-radius: 100px;
-            font-size: 0.9rem;
-            border: 1px solid rgba(226, 169, 255, 0.2);
-        }
-
-        /* Projects Grid */
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 24px;
-        }
-
-        .project-card {
-            background: rgba(18, 18, 26, 0.8);
-            border: 1px solid rgba(123, 45, 142, 0.2);
-            border-radius: 16px;
-            padding: 28px;
-            backdrop-filter: blur(10px);
-            transition: all 0.3s ease;
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-            border-color: rgba(226, 169, 255, 0.5);
-            box-shadow: 0 20px 40px rgba(123, 45, 142, 0.2);
-        }
-
-        .project-icon {
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-
-        .project-title {
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin-bottom: 12px;
-            color: #E2A9FF;
-        }
-
-        .project-desc {
-            color: #a1a1aa;
-            font-size: 0.95rem;
-            margin-bottom: 20px;
-        }
-
-        .project-tech {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-bottom: 20px;
-        }
-
-        .tech-badge {
-            background: rgba(123, 45, 142, 0.2);
-            color: #d4d4d8;
-            padding: 4px 10px;
-            border-radius: 6px;
-            font-size: 0.75rem;
-        }
-
-        .project-link {
-            color: #E2A9FF;
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 500;
-        }
-
-        .project-link:hover {
-            text-decoration: underline;
-        }
-
-        /* Services Grid */
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 24px;
-        }
-
-        .service-card {
-            background: rgba(18, 18, 26, 0.8);
-            border: 1px solid rgba(123, 45, 142, 0.2);
-            border-radius: 16px;
-            padding: 28px;
-            backdrop-filter: blur(10px);
-        }
-
-        .service-title {
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin-bottom: 12px;
-            color: #E2A9FF;
-        }
-
-        .service-desc {
-            color: #a1a1aa;
-            font-size: 0.95rem;
-        }
-
-        /* Contact Section */
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-        }
-
-        .contact-info {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .contact-icon {
-            width: 40px;
-            height: 40px;
-            background: rgba(123, 45, 142, 0.2);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 1px solid rgba(226, 169, 255, 0.3);
-        }
-
-        .contact-text {
-            color: #d4d4d8;
-        }
-
-        .contact-link {
-            color: #E2A9FF;
-            text-decoration: none;
-        }
-
-        .contact-link:hover {
-            text-decoration: underline;
-        }
-
-        /* Footer */
-        .footer {
-            padding: 40px 0;
-            border-top: 1px solid rgba(123, 45, 142, 0.2);
-            text-align: center;
-            color: #71717a;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero-grid {
-                grid-template-columns: 1fr;
-                gap: 40px;
-            }
-            
-            .hero-title {
-                font-size: 2.5rem;
-            }
-            
-            .contact-grid {
-                grid-template-columns: 1fr;
-                gap: 40px;
-            }
-            
-            .projects-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Navigation -->
-        <nav class="navbar">
-            <div class="logo">Marjia.dev</div>
-            <div class="status-badge">
-                <span class="status-dot"></span>
-                <span>CORE UI ONLINE</span>
+    <div id="intro">
+        <div class="intro-card">
+            <div class="top-tags">
+                <span class="dot">● SYSTEM READY</span>
+                <span>MARJIA'S PORTFOLIO</span>
+                <span>UI LOADING</span>
             </div>
-        </nav>
-
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-grid">
-                <div>
-                    <div class="hero-badge"># WELCOME</div>
-                    <h1 class="hero-title">
-                        Building <span>reliable</span><br>
-                        digital experiences
-                    </h1>
-                    <p class="hero-subtitle">
-                        CSE Senior @ UIU | Aspiring SQA Engineer & Bioinformatics Researcher
+            <div class="intro-content">
+                <div class="intro-left">
+                    <p class="eyebrow">WELCOME</p>
+                    <h1>Hi, I'm Marjia Islam 👋</h1>
+                    <p class="intro-desc">
+                        Building reliable software and exploring the beauty of data through SQA,
+                        AI, and bioinformatics.
                     </p>
-                    <p style="color: #a1a1aa; margin-bottom: 30px; max-width: 500px;">
-                        I craft robust software with a focus on quality assurance, clean architecture, 
-                        and data-driven research in bioinformatics.
-                    </p>
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="#contact" class="btn">Get In Touch</a>
-                </div>
-                <div class="stats-panel">
-                    <div style="margin-bottom: 20px;">
-                        <span style="color: #E2A9FF; font-weight: 600;">LIVE STATUS</span>
-                    </div>
-                    <div class="stat-row">
-                        <span class="stat-label">www.marjia.dev</span>
-                        <span class="stat-value">ONLINE</span>
-                    </div>
-                    <div class="stat-row">
-                        <span class="stat-label">Projects Loaded</span>
-                        <span class="stat-value">07</span>
-                    </div>
-                    <div class="stat-row">
-                        <span class="stat-label">Response Time</span>
-                        <span class="stat-value">12ms</span>
-                    </div>
-                    <div class="stat-row">
-                        <span class="stat-label">Status</span>
-                        <span class="stat-value">Stable</span>
-                    </div>
-                    <div class="availability-tag">
-                        ✓ Available for internships & RA opportunities
-                    </div>
-                    <div style="margin-top: 20px; color: #a1a1aa; font-size: 0.9rem;">
-                        @marjia_islam<br>
-                        CSE Senior & Researcher
+                    <div class="live-line">LIVE STATUS: <span id="intro-status">OPEN TO OPPORTUNITIES</span></div>
+                    <div class="quick-pills">
+                        <span><i class="fa-solid fa-code"></i> CSE Undergrad @ UIU</span>
+                        <span><i class="fa-solid fa-shield-halved"></i> Interested in SQA</span>
+                        <span><i class="fa-solid fa-dna"></i> Bioinformatics Thesis</span>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about">
-            <div class="section-header">
-                <div class="section-tag">// ABOUT ME</div>
-                <h2 class="section-title">Hi! I'm Marjia Islam</h2>
-            </div>
-            <div class="about-content">
-                <p class="about-text">
-                    I'm a final-year Computer Science and Engineering student at 
-                    <strong style="color: #E2A9FF;">United International University</strong> in Dhaka, Bangladesh. 
-                    I'm currently navigating the exciting intersection of software quality assurance, 
-                    bioinformatics research, and full-stack development.
-                </p>
-                <p class="about-text">
-                    My academic journey has been driven by a deep curiosity about how things work—whether 
-                    it's debugging a complex application or analyzing biological data for my thesis. 
-                    I've built projects ranging from health management platforms to environmental monitoring 
-                    systems, always with an eye on reliability and user experience.
-                </p>
-                <p style="color: #E2A9FF; margin-bottom: 16px;">Currently improving my skills in:</p>
-                <div class="skill-tags">
-                    <span class="skill-tag">#Software Quality Assurance</span>
-                    <span class="skill-tag">#Bioinformatics Research</span>
-                    <span class="skill-tag">#Machine Learning</span>
-                    <span class="skill-tag">#Spring Boot & React</span>
-                    <span class="skill-tag">#Python for Data Science</span>
-                    <span class="skill-tag">#Figma & UI Prototyping</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects">
-            <div class="section-header">
-                <div class="section-tag">// PROJECTS</div>
-                <h2 class="section-title"># Featured Work</h2>
-                <p style="color: #a1a1aa; margin-top: 12px;">
-                    A showcase of my recent projects demonstrating expertise in full-stack development, 
-                    embedded systems, and research-oriented software.
-                </p>
-            </div>
-            <div class="projects-grid">
-                <!-- MediMind -->
-                <div class="project-card">
-                    <div class="project-icon">💊</div>
-                    <h3 class="project-title">MediMind</h3>
-                    <p class="project-desc">
-                        Digital health companion with medicine tracking, meal planning, mood journaling, 
-                        and gamified wellness features.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-badge">Spring Boot</span>
-                        <span class="tech-badge">React</span>
-                        <span class="tech-badge">TypeScript</span>
-                        <span class="tech-badge">MySQL</span>
+                <div class="intro-right">
+                    <div class="orbital-ring"></div>
+                    <div class="core-badge">
+                        <p>MARJIA ISLAM</p>
+                        <h3>ONLINE</h3>
                     </div>
-                    <a href="https://github.com/MarjiaIslam/MediMind" class="project-link">View on GitHub →</a>
-                </div>
-                <!-- WALL-E -->
-                <div class="project-card">
-                    <div class="project-icon">🤖</div>
-                    <h3 class="project-title">WALL-E Rover</h3>
-                    <p class="project-desc">
-                        Web-based environmental monitoring system for a rover prototype with real-time 
-                        sensor data dashboard.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-badge">Arduino</span>
-                        <span class="tech-badge">Python</span>
-                        <span class="tech-badge">PHP</span>
-                        <span class="tech-badge">MySQL</span>
-                    </div>
-                    <a href="https://github.com/MarjiaIslam/WALL-E" class="project-link">View on GitHub →</a>
-                </div>
-                <!-- CrimeSync -->
-                <div class="project-card">
-                    <div class="project-icon">🚔</div>
-                    <h3 class="project-title">CrimeSync</h3>
-                    <p class="project-desc">
-                        Secure crime reporting and analysis system with role-based access control for 
-                        citizens, officers, and admins.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-badge">PHP</span>
-                        <span class="tech-badge">MySQL</span>
-                        <span class="tech-badge">HTML/CSS</span>
-                    </div>
-                    <a href="https://youtu.be/0z_dPx2PnJc" class="project-link">Watch Demo →</a>
-                </div>
-                <!-- Hydro Trash Collector -->
-                <div class="project-card">
-                    <div class="project-icon">🌊</div>
-                    <h3 class="project-title">Hydro Trash Collector</h3>
-                    <p class="project-desc">
-                        Automated water-cleaning system using ultrasonic sensors and IoT alerts for 
-                        debris collection.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-badge">Arduino</span>
-                        <span class="tech-badge">ESP8266</span>
-                        <span class="tech-badge">Sensors</span>
-                    </div>
-                    <a href="https://drive.google.com/file/d/1GHUwF3ZcTEQ5u4yB1fF384gL62HQ-KRQ/view" class="project-link">View Documentation →</a>
-                </div>
-                <!-- Shastho Shurokkha -->
-                <div class="project-card">
-                    <div class="project-icon">🏥</div>
-                    <h3 class="project-title">Shastho Shurokkha</h3>
-                    <p class="project-desc">
-                        Unified healthcare platform prototype with vaccination tracking, blood donation, 
-                        and hospital bed reservations.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-badge">Figma</span>
-                        <span class="tech-badge">System Analysis</span>
-                        <span class="tech-badge">SRS</span>
-                    </div>
-                    <a href="#" class="project-link">Available on Request →</a>
-                </div>
-                <!-- CookBook -->
-                <div class="project-card">
-                    <div class="project-icon">🍳</div>
-                    <h3 class="project-title">CookBook</h3>
-                    <p class="project-desc">
-                        Online recipe sharing platform with user authentication, recipe uploads, 
-                        comments, and search functionality (ongoing).
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-badge">PHP</span>
-                        <span class="tech-badge">MySQL</span>
-                        <span class="tech-badge">Figma</span>
-                    </div>
-                    <a href="#" class="project-link">In Development →</a>
-                </div>
-                <!-- Inventory Management -->
-                <div class="project-card">
-                    <div class="project-icon">📦</div>
-                    <h3 class="project-title">Inventory Manager</h3>
-                    <p class="project-desc">
-                        Simple CRUD-based web application for managing product inventory with 
-                        responsive interface.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-badge">PHP</span>
-                        <span class="tech-badge">MySQL</span>
-                        <span class="tech-badge">HTML/CSS</span>
-                    </div>
-                    <a href="https://github.com/MarjiaIslam/Inventory-Management-System" class="project-link">View on GitHub →</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Services / Expertise -->
-        <section id="services">
-            <div class="section-header">
-                <div class="section-tag">// EXPERTISE</div>
-                <h2 class="section-title"># What I Bring</h2>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3 class="service-title">🧪 Software Quality Assurance</h3>
-                    <p class="service-desc">
-                        Testing methodologies, bug tracking with Jira, test case design, and ensuring 
-                        software reliability through systematic validation.
-                    </p>
-                </div>
-                <div class="service-card">
-                    <h3 class="service-title">🔬 Bioinformatics Research</h3>
-                    <p class="service-desc">
-                        Data analysis for biological problems, currently focused on thesis research 
-                        applying computational methods to biological data.
-                    </p>
-                </div>
-                <div class="service-card">
-                    <h3 class="service-title">💻 Full-Stack Development</h3>
-                    <p class="service-desc">
-                        Building responsive web applications with Spring Boot, React, PHP, and MySQL. 
-                        Focus on clean architecture and maintainable code.
-                    </p>
-                </div>
-                <div class="service-card">
-                    <h3 class="service-title">🤖 Machine Learning</h3>
-                    <p class="service-desc">
-                        Supervised, unsupervised, and deep learning techniques. Experience with 
-                        Scikit-Learn, PyTorch, and TensorFlow for model development.
-                    </p>
-                </div>
-                <div class="service-card">
-                    <h3 class="service-title">🔧 Embedded Systems</h3>
-                    <p class="service-desc">
-                        Arduino, ESP32, and Raspberry Pi projects integrating sensors and IoT 
-                        connectivity for real-world monitoring solutions.
-                    </p>
-                </div>
-                <div class="service-card">
-                    <h3 class="service-title">🎨 UI/UX Prototyping</h3>
-                    <p class="service-desc">
-                        Creating intuitive interfaces and interactive prototypes using Figma, with 
-                        a focus on user-centered design and accessibility.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact">
-            <div class="section-header">
-                <div class="section-tag">// CONNECT</div>
-                <h2 class="section-title">## Get In Touch</h2>
-                <p style="color: #a1a1aa; margin-top: 12px;">
-                    Let's collaborate! I'm always open to discussing exciting projects, 
-                    research opportunities, and internship roles.
-                </p>
-            </div>
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">📧</div>
-                        <div class="contact-text">
-                            <a href="mailto:marjia3035@gmail.com" class="contact-link">marjia3035@gmail.com</a>
+                    <div class="intro-stats">
+                        <div>
+                            <h4>08+</h4>
+                            <p>Projects</p>
                         </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📱</div>
-                        <div class="contact-text">
-                            <a href="tel:+8801711379663" class="contact-link">+880 1711 379663</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📍</div>
-                        <div class="contact-text">
-                            Dhaka, Bangladesh
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">💼</div>
-                        <div class="contact-text">
-                            <a href="https://www.linkedin.com/in/marjiaislam3035" class="contact-link">linkedin.com/in/marjiaislam3035</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">🐙</div>
-                        <div class="contact-text">
-                            <a href="https://github.com/MarjiaIslam" class="contact-link">github.com/MarjiaIslam</a>
+                        <div>
+                            <h4>2026</h4>
+                            <p>Graduating Year</p>
                         </div>
                     </div>
                 </div>
-                <div style="background: rgba(18, 18, 26, 0.8); border: 1px solid rgba(123, 45, 142, 0.3); border-radius: 16px; padding: 28px;">
-                    <h3 style="color: #E2A9FF; margin-bottom: 20px;">Current Focus</h3>
-                    <div style="margin-bottom: 16px;">
-                        <span style="display: block; color: #a1a1aa; margin-bottom: 8px;">🔬 Bioinformatics Thesis</span>
-                        <span style="display: block; color: #a1a1aa; margin-bottom: 8px;">🧪 Exploring SQA & AI</span>
-                        <span style="display: block; color: #a1a1aa; margin-bottom: 8px;">💼 Open to Internships & RA Roles</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="real-site" style="display: none;">
+        <header>
+            <nav>
+                <ul class="nav-list">
+                    <li class="active"><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero section" id="home">
+                <div class="container hero-grid">
+                    <div>
+                        <span class="status-badge"><span class="status-dot"></span> Open to internships, research assistantships, and teaching assistantships</span>
+                        <h1>Building reliable software &amp; exploring the beauty of data</h1>
+                        <h2>CSE Undergrad @ UIU | Thesis in Bioinformatics | Interested in SQA &amp; AI</h2>
+                        <p>
+                            I'm a final-year Computer Science student passionate about software quality assurance,
+                            bioinformatics research, and full-stack development.
+                        </p>
+                        <div class="hero-meta">
+                            <span><i class="fa-solid fa-location-dot"></i> Dhaka, Bangladesh</span>
+                            <span><i class="fa-solid fa-envelope"></i> marjia3035@gmail.com</span>
+                            <span><i class="fa-solid fa-phone"></i> +880 1711 379663</span>
+                        </div>
+                        <div class="hero-links">
+                            <a href="https://github.com/MarjiaIslam" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+                            <a href="https://www.linkedin.com/in/marjiaislam3035" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                            <a href="mailto:marjia3035@gmail.com"><i class="fa-solid fa-paper-plane"></i> Email Me</a>
+                            <a href="https://drive.google.com/file/d/1iXi_piYydv1A7tkwCexlqVB9aexzx2pS/view?usp=sharing" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-lines"></i> CV</a>
+                        </div>
                     </div>
-                    <div style="margin-top: 24px;">
-                        <a href="your-google-drive-notes-link" style="color: #E2A9FF; text-decoration: none; display: block; margin-bottom: 8px;">📝 UIU CSE Handwritten Notes →</a>
-                        <a href="your-certificates-link" style="color: #E2A9FF; text-decoration: none;">📜 GP Academy Certificates →</a>
+                    <aside class="hero-card reveal">
+                        <h3>Basic Info</h3>
+                        <p><strong>Name:</strong> Marjia Islam</p>
+                        <p><strong>Role:</strong> Computer Science &amp; Engineering Undergrad @ United International University, interested in SQA &amp; Bioinformatics Research</p>
+                        <p><strong>Location:</strong> Dhaka, Bangladesh</p>
+                    </aside>
+                </div>
+            </section>
+
+            <section class="section" id="about">
+                <div class="container reveal">
+                    <h3 class="section-title">About Me</h3>
+                    <p>
+                        I am currently studying Computer Science and Engineering at United International University.
+                        My interests lie in Software Quality Assurance (SQA), Artificial Intelligence, and bioinformatics.
+                        I am currently working on my undergraduate thesis in bioinformatics, where I explore how computational
+                        methods can be used to analyze biological data.
+                    </p>
+                    <p>
+                        I have experience in full-stack development using React, Spring Boot, and MySQL. I have also worked
+                        on IoT-based systems using Arduino, ESP32, ESP8266, and Raspberry Pi. Through academic projects,
+                        I have developed skills in problem solving, system design, software development, and testing methodologies.
+                    </p>
+                    <p>
+                        As I get ready to graduate, I am exploring opportunities in both industry and research where I can apply
+                        my skills, contribute meaningfully, and keep learning.
+                    </p>
+                    <div class="focus-grid">
+                        <article>
+                            <h4>Currently Learning / Improving</h4>
+                            <ul>
+                                <li>Software Quality Assurance methodologies</li>
+                                <li>Bioinformatics research techniques</li>
+                                <li>Machine Learning &amp; Deep Learning</li>
+                                <li>Spring Boot &amp; React ecosystem</li>
+                                <li>Python for data science</li>
+                                <li>UI/UX prototyping with Figma</li>
+                            </ul>
+                        </article>
+                        <article>
+                            <h4>Current Focus</h4>
+                            <ul>
+                                <li>Bioinformatics Thesis (Ongoing)</li>
+                                <li>Exploring SQA Methodologies</li>
+                                <li>Learning AI/ML Applications</li>
+                                <li>Open to Internships &amp; Research Assistantships</li>
+                            </ul>
+                        </article>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <p>© 2025 Marjia Islam. Built with 💜 | CSE Senior @ UIU</p>
+            <section class="section" id="skills">
+                <div class="container reveal">
+                    <h3 class="section-title">Skills</h3>
+                    <div class="skills-grid">
+                        <article>
+                            <h4>Programming Languages</h4>
+                            <div class="chips">
+                                <span>C</span><span>C++</span><span>Python</span><span>Java</span><span>SQL</span>
+                                <span>TypeScript</span><span>PHP</span><span>HTML</span><span>CSS</span>
+                            </div>
+                        </article>
+                        <article>
+                            <h4>Frameworks &amp; Libraries</h4>
+                            <div class="chips">
+                                <span>React</span><span>Spring Boot</span><span>NumPy</span><span>Pandas</span>
+                                <span>Matplotlib</span><span>Scikit-Learn</span><span>TensorFlow</span><span>PyTorch</span>
+                            </div>
+                        </article>
+                        <article>
+                            <h4>Tools &amp; Platforms</h4>
+                            <div class="chips">
+                                <span>Git</span><span>GitHub</span><span>Jira</span><span>Figma</span><span>Miro</span>
+                                <span>LaTeX</span><span>MS Office</span><span>Cisco Packet Tracer</span>
+                                <span>Proteus Simulator</span><span>Logisim Simulator</span>
+                            </div>
+                        </article>
+                        <article>
+                            <h4>Hardware &amp; IoT</h4>
+                            <div class="chips">
+                                <span>Arduino Uno</span><span>ESP32</span><span>ESP8266</span><span>Raspberry Pi</span>
+                            </div>
+                        </article>
+                        <article>
+                            <h4>Machine Learning</h4>
+                            <div class="chips">
+                                <span>Linear Regression</span><span>Logistic Regression</span><span>KNN</span>
+                                <span>Decision Tree</span><span>Random Forest</span><span>K-Means</span>
+                                <span>SVM</span><span>Naive Bayes</span>
+                            </div>
+                            <a class="skill-link" href="https://github.com/MarjiaIslam/Machine-Learning" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        </article>
+                        <article>
+                            <h4>Concepts</h4>
+                            <div class="chips">
+                                <span>Data Structures</span><span>Algorithms</span><span>Software Engineering</span>
+                                <span>SQA Concepts</span><span>REST APIs</span><span>Multithreading</span><span>Database Design</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="projects">
+                <div class="container reveal">
+                    <h3 class="section-title">Projects</h3>
+                    <div class="projects-grid">
+                        <article class="project-card">
+                            <h4>MediMind - Digital Health Companion</h4>
+                            <p>A full-stack health management system with medicine tracking, nutrition planning, mood journaling, hydration tracking, and gamified wellness features.</p>
+                            <ul>
+                                <li>Medicine reminders and tracking</li>
+                                <li>Nutrition planning with health conditions</li>
+                                <li>Mood journaling system</li>
+                                <li>Hydration tracking and achievements</li>
+                            </ul>
+                            <div class="chips"><span>Spring Boot</span><span>React</span><span>TypeScript</span><span>MySQL</span></div>
+                            <a href="https://github.com/MarjiaIslam/MediMind" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+                        </article>
+
+                        <article class="project-card">
+                            <h4>WALL-E - Rover Monitoring System</h4>
+                            <p>An IoT-based environmental monitoring system that collects real-time sensor data and displays it in a web dashboard.</p>
+                            <ul>
+                                <li>Real-time sensor data monitoring</li>
+                                <li>Environmental condition tracking</li>
+                                <li>Web-based visualization dashboard</li>
+                                <li>Multiple gas sensors integration</li>
+                            </ul>
+                            <div class="chips"><span>Arduino</span><span>Python</span><span>PHP</span><span>MySQL</span></div>
+                            <div class="project-links">
+                                <a href="https://github.com/MarjiaIslam/WALL-E" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                <a href="https://drive.google.com/file/d/1htmF_pccXf3SHI4lxRd6EhUVjWumbeRv/view" target="_blank" rel="noopener noreferrer">Video</a>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <h4>CrimeSync - Crime Reporting System</h4>
+                            <p>A role-based web application for reporting and managing crime cases by citizens, officers, and administrators.</p>
+                            <ul>
+                                <li>Authentication and role-based access</li>
+                                <li>Evidence upload support</li>
+                                <li>Case status tracking</li>
+                                <li>Admin control panel</li>
+                            </ul>
+                            <div class="chips"><span>PHP</span><span>MySQL</span><span>HTML</span><span>CSS</span></div>
+                            <a href="https://youtu.be/0z_dPx2PnJc" target="_blank" rel="noopener noreferrer">Project Video</a>
+                        </article>
+
+                        <article class="project-card">
+                            <h4>Hydro Trash Collector (HTC-223)</h4>
+                            <p>An automated IoT system to collect floating waste from water bodies using sensors, conveyor mechanisms, and notification alerts.</p>
+                            <ul>
+                                <li>Ultrasonic sensor-based trash detection</li>
+                                <li>Conveyor belt waste collection</li>
+                                <li>IR sensor for bin capacity monitoring</li>
+                                <li>WiFi notifications using ESP8266</li>
+                            </ul>
+                            <div class="chips"><span>Arduino</span><span>ESP8266</span><span>Embedded Systems</span></div>
+                            <a href="https://www.overleaf.com/read/jtrvcrypbrgb#ae246e" target="_blank" rel="noopener noreferrer">Documentation</a>
+                        </article>
+
+                        <article class="project-card">
+                            <h4>Shastho Shurokkha - Healthcare System Prototype</h4>
+                            <p>A Figma-based UI/UX prototype for a unified healthcare platform covering appointments, blood donation, emergency requests, and services.</p>
+                            <ul>
+                                <li>Appointment booking flow</li>
+                                <li>Blood donation and emergency request flows</li>
+                                <li>Hospital and ambulance services</li>
+                                <li>Multi-role user interface prototype</li>
+                            </ul>
+                            <div class="chips"><span>Figma</span><span>UI/UX Design</span><span>SRS Documentation</span></div>
+                            <a href="https://drive.google.com/drive/folders/1s1ILOBYC7grOK_jFoOQn3IftHyEdid2b?usp=drive_link" target="_blank" rel="noopener noreferrer">Figma Prototype Pictures</a>
+                        </article>
+
+                        <article class="project-card">
+                            <h4>CookBook - Recipe Sharing Platform</h4>
+                            <p>A web application where users can upload, discover, and interact with recipes through search and social engagement features.</p>
+                            <ul>
+                                <li>Recipe upload and management</li>
+                                <li>Search and categorization</li>
+                                <li>Comment and like interactions</li>
+                                <li>User authentication</li>
+                            </ul>
+                            <div class="chips"><span>HTML</span><span>CSS</span><span>PHP</span><span>MySQL</span></div>
+                            <a href="https://drive.google.com/drive/folders/1cUC9-zdSnKVaKHSHWV2gNSMqxxBl5YE9?usp=drive_link" target="_blank" rel="noopener noreferrer">Figma Prototype Pictures</a>
+                        </article>
+
+                        <article class="project-card">
+                            <h4>Inventory Management System</h4>
+                            <p>A simple CRUD-based web system for managing product inventory with responsive UI and practical workflow management.</p>
+                            <ul>
+                                <li>Add, update, and delete products</li>
+                                <li>View inventory in organized lists</li>
+                                <li>Simple management interface</li>
+                                <li>Course assignment project</li>
+                            </ul>
+                            <div class="chips"><span>PHP</span><span>MySQL</span><span>HTML</span><span>CSS</span></div>
+                            <a href="https://github.com/MarjiaIslam/Inventory-Management-System" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+                        </article>
+
+                        <article class="project-card">
+                            <h4>Snake Game</h4>
+                            <p>A classic snake game project showcasing game logic, movement control, collision handling, and score progression.</p>
+                            <ul>
+                                <li>Interactive keyboard-based movement</li>
+                                <li>Collision and game-over detection</li>
+                                <li>Score tracking</li>
+                                <li>Simple and engaging gameplay loop</li>
+                            </ul>
+                            <div class="chips"><span>Game Logic</span><span>JavaScript</span><span>HTML</span><span>CSS</span></div>
+                            <a href="https://github.com/MarjiaIslam/SnakeGame" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="experience">
+                <div class="container reveal">
+                    <h3 class="section-title">Experience</h3>
+                    <article class="timeline-card">
+                        <h4>Private Academic Tutor (2017-2020)</h4>
+                        <ul>
+                            <li>Taught Mathematics, English, Physics, Chemistry, and Biology to secondary-level students.</li>
+                            <li>Built personalized lesson plans and practice materials based on student needs.</li>
+                            <li>Helped students improve confidence and academic performance.</li>
+                            <li>Developed strong communication, adaptability, and teaching skills.</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section" id="education">
+                <div class="container reveal">
+                    <h3 class="section-title">Education</h3>
+                    <div class="edu-grid">
+                        <article>
+                            <h4>BSc in Computer Science and Engineering</h4>
+                            <p>United International University</p>
+                            <p>2022-2026 | Major: Data Science | Thesis: Bioinformatics Research</p>
+                        </article>
+                        <article>
+                            <h4>HSC (Science)</h4>
+                            <p>Khilgaon Girls School and College</p>
+                            <p>GPA: 5.00/5.00 | 2020</p>
+                        </article>
+                        <article>
+                            <h4>SSC (Science)</h4>
+                            <p>Khilgaon Girls School and College</p>
+                            <p>GPA: 5.00/5.00 | 2018</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="certifications">
+                <div class="container reveal">
+                    <h3 class="section-title">Certifications &amp; Workshops</h3>
+                    <div class="cert-grid">
+                        <article>
+                            <h4>Grameenphone Academy - Professional Development Courses</h4>
+                            <ul>
+                                <li>Smart CV</li>
+                                <li>Art of Communication</li>
+                                <li>Corporate Presentation Skills</li>
+                                <li>LinkedIn 101</li>
+                                <li>Sharpen Your Interview Skills</li>
+                            </ul>
+                            <a href="https://drive.google.com/drive/folders/15u1WPZ7Bbuoct_b2hWLukgOlwsyf-AUI?usp=drive_link" target="_blank" rel="noopener noreferrer">Certificates</a>
+                        </article>
+                        <article>
+                            <h4>Fact-Checking and Effective Use of Media Workshop</h4>
+                            <p>Organizer: UIU MSJ Department</p>
+                            <p>Focus: Information verification and responsible media consumption.</p>
+                            <a href="https://drive.google.com/file/d/1pIIRd_bu0q9NacNZflKR7JiPjM0DKrQF/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Certificate</a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="interests">
+                <div class="container reveal">
+                    <h3 class="section-title">Interests</h3>
+                    <div class="chips interests">
+                        <span>Software Quality Assurance (SQA)</span>
+                        <span>Artificial Intelligence</span>
+                        <span>Machine Learning</span>
+                        <span>Bioinformatics Research</span>
+                        <span>Human-Computer Interaction</span>
+                        <span>Full-stack Development</span>
+                        <span>UI/UX Design</span>
+                        <span>Teaching and Mentorship</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="notes">
+                <div class="container reveal">
+                    <h3 class="section-title">Study Resources: Handwritten Notes</h3>
+                    <p>
+                        This is a collection of my handwritten notes from CSE courses at United International University.
+                        The materials include topics from programming, database systems, electronics, and other core subjects.
+                        They are simple notes prepared during my own learning journey, and I am sharing them in case they
+                        help fellow students or anyone studying these topics independently.
+                    </p>
+                    <a class="notes-link" href="https://drive.google.com/drive/folders/181SOqVTWkFZHqyalPLmb_-ICMFA46RTE?usp=sharing" target="_blank" rel="noopener noreferrer">View Notes</a>
+                </div>
+            </section>
+
+            <section class="section" id="contact">
+                <div class="container reveal contact-box">
+                    <h3 class="section-title">Contact</h3>
+                    <p>Let's connect for internships, research collaborations, and opportunities.</p>
+                    <div class="contact-grid">
+                        <a href="mailto:marjia3035@gmail.com"><i class="fa-solid fa-envelope"></i> marjia3035@gmail.com</a>
+                        <a href="tel:+8801711379663"><i class="fa-solid fa-phone"></i> +880 1711 379663</a>
+                        <a href="https://github.com/MarjiaIslam" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> github.com/MarjiaIslam</a>
+                        <a href="https://www.linkedin.com/in/marjiaislam3035" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> linkedin.com/in/marjiaislam3035</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Marjia Islam | CSE Student | Interested in SQA | AI &amp; Bioinformatics Enthusiast</p>
         </footer>
     </div>
 
-    <script>
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
-
-        // Update stats dynamically (optional)
-        const projectsCount = document.querySelectorAll('.project-card').length;
-        document.querySelector('.stat-value').textContent = projectsCount.toString().padStart(2, '0');
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
