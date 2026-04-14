@@ -1,6 +1,6 @@
 # Marjia Islam Portfolio
 
-A modern, single-page personal portfolio website with an animated intro screen, smooth section navigation, and responsive design.
+A personal portfolio website with an animated intro screen, smooth section navigation, and responsive design.
 
 ## Overview
 
