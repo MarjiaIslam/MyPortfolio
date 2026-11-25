@@ -1,6 +1,6 @@
 # Marjia Islam Portfolio
 
-A personal portfolio website with an animated intro screen, smooth section navigation, and responsive design.
+A simple personal portfolio website with smooth section navigation and a responsive layout.
 
 ## Overview
 
@@ -15,11 +15,9 @@ The site is built with plain HTML, CSS, and JavaScript, so it is easy to run and
 
 ## Features
 
-- Animated intro/loading section before main content
+
 - Sticky navigation with active section highlight on scroll
 - Smooth anchor scrolling
-- Scroll reveal animations
-- Live footer time update
 - Fully responsive layout for desktop and mobile
 
 ## Tech Stack
@@ -28,7 +26,7 @@ The site is built with plain HTML, CSS, and JavaScript, so it is easy to run and
 - CSS3
 - JavaScript (Vanilla)
 - Font Awesome (CDN)
-- Google Fonts (Sora, Space Grotesk)
+- Google Fonts (Inter)
 
 ## Project Structure
 
@@ -56,13 +54,11 @@ Optional: you can also use VS Code Live Server for auto-reload while editing.
 
 - Update content sections in `index.html`
 - Adjust colors, layout, and effects in `style.css`
-- Change intro timing, scroll behavior, and dynamic footer text in `script.js`
+- Change navigation highlight behavior in `script.js`
 
-### Important Script Behavior
+### Script Behavior
 
-- Intro screen is shown on page load and transitions out after a short delay.
 - Navigation item state updates based on current scroll position.
-- Footer text includes current local time and updates every minute.
 
 ## Contact
 
